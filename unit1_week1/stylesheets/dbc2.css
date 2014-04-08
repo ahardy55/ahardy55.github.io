@@ -14,10 +14,18 @@ header {
   width: inherit;
 }
 
+.theCatch {
+  height: 153px;
+  width: 850px;
+  position: relative;
+}
 
-#cardinalLogo {
-  height: 155px;
-  float: left;
+.title {
+  position: absolute;
+  top: 200px;
+  left: 0;
+  width: 100%;
+  margin-top: -100px;
 }
 
 .headline {
