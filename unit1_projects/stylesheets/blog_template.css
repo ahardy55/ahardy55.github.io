@@ -30,10 +30,9 @@ main {
   overflow-y: scroll;
   width: 695px;
   margin-top: 50px;
-  margin-bottom: 18px;
+  margin-bottom: 5px;
   padding-left: 54px;
   padding-right: 25px;
-  border-bottom: 1px solid black;
 }
 
 time {
@@ -63,7 +62,6 @@ nav {
   padding-top: 35px;
   text-align: center;
   font-size: 13px;
-  border-bottom: 1px solid black;
 }
 
 #headshot {
@@ -82,7 +80,9 @@ nav {
 
 footer{
   clear: both;
-  padding-left: 45px;
+  border-top: 1px solid black;
+  padding-top: 10px;
+  padding-left: 70px;
   letter-spacing: 1.5em;
 }
 
