@@ -1,0 +1,65 @@
+body {
+  background-color: F5E0BF;
+}
+
+.container {
+  width : 960px;
+  margin: auto;
+  margin-top: 15px
+}
+
+header {
+  text-align: center;
+  font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;
+}
+
+h1 {
+  background-color: FACE89;
+  width: 460px;
+  margin: auto;
+  margin-top: 5px;
+  font-size: 40px;
+}
+
+h2 {
+  background-color: FACE89;
+  padding-top: 8px;
+  height: 37px;
+  width: 785px;
+  margin: auto;
+  margin-top: 15px;
+
+}
+
+.headshot {
+  border-radius: 50%;
+  height: 200px;
+}
+
+nav {
+  float: left;
+  height: 380px;
+  border-right: 1px solid black;
+  margin-left: 90px;
+  padding-right: 18px;
+}
+
+h3 {
+  text-decoration: underline;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+#aboutThisPage {
+  float: left;
+  height: 380px;
+  width: 610px;
+}
+
+footer {
+  clear: both;
+}
+
+.socialMedia {
+  height: 50px;
+}
