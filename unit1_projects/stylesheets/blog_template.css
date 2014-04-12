@@ -1,0 +1,91 @@
+body {
+  background-image: url(../images/ps_neutral.png);
+}
+
+.container {
+  width: 960px;
+  background-color: white;
+  margin: auto;
+}
+
+header {
+  text-align: center;
+}
+
+h1 {
+  font-size: 65px;
+  color: rgb(173, 126, 147);
+  padding-top: 40px;
+}
+
+h3 {
+  color: rgb(160, 160, 160);
+  margin-top: -45px;
+  font-family: cursive;
+}
+
+main { 
+  float: left;
+  height: 600px;
+  overflow-y: scroll;
+  width: 695px;
+  margin-top: 50px;
+  margin-bottom: 18px;
+  padding-left: 54px;
+  padding-right: 25px;
+  border-bottom: 1px solid black;
+}
+
+time {
+  font-size: 20px;
+  font-style: italic;
+  color: rgb(160, 160, 160);
+}
+
+.title {
+  font-size: 30px;
+  color: rgb(173, 126, 147);
+}
+
+article {
+  border-bottom: 1px dotted black;
+  margin-top: 22px;
+  margin-bottom: 20px;
+  padding-bottom: 35px;
+  text-align: justify;
+}
+
+nav {
+  float: left;
+  height: 615px;
+  width: 168px;
+  padding-left: 8px;
+  padding-top: 35px;
+  text-align: center;
+  font-size: 13px;
+  border-bottom: 1px solid black;
+}
+
+#headshot {
+  height: 90px;
+  border-radius: 50%;
+}
+
+.aboutMe {
+  border-bottom: 1px dotted black;
+  padding-bottom: 10px;
+}
+
+.pastPosts {
+  padding-top: 10px;
+}
+
+footer{
+  clear: both;
+  padding-left: 45px;
+  letter-spacing: 1.5em;
+}
+
+.icon {
+  height: 40px;
+}
