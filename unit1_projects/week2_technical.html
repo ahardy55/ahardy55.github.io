@@ -1,0 +1,92 @@
+<DOCTYPE html>
+<html>
+  <head>
+    <title>ADAM HARDY</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/blog_template.css">
+  </head>
+
+<body>
+  <div class="container">
+	  <header>
+		  <h1>ADAM HARDY</h1>
+		  <h3>Musings From a Developer in Training</h3>
+	  </header>
+
+	  <main>
+		  <time>Sunday, April 13th, 2014</time> <br/>
+		  <span class="title">ID's Vs. Classes</span>
+
+      <article>
+        <p>
+          One of the fun things about when first learning HTML is nervously waiting for someone to point out that you're using IDs and Classes wrong.  They both seem to serve the same function: to isolate an element for CSS styling, yet seem arbitrability applied.  What is the difference?  Why do two separate ways to ID an element exist to begin with? When should ID be used instead of Class?  Well, fear not HTML/CSS novice, for I will answer these questions!
+        </p>
+
+        <p>
+          Classes and ID's can be added to HTML elements, allowing you to select and manipulate them in CSS.  Have a photo you want sized differently from your other images?  Give it an ID:
+        </p>
+
+       <p>
+         <strong>HTML</strong> <br/>
+         &ltimg src="photo.jpg" id="bigPhoto"&gt <br/><br/>
+
+         <strong>CSS </strong><br/>
+         #bigPhoto { <br/>
+          &nbsp &nbsp size: 100px; <br/>
+          }
+        </p>
+
+        <p>
+          But what if you have a group of photos that you want to be the same size?  That is where class comes into play. 
+          <br/><br/>
+          <strong>HTML</strong> <br/>
+            &ltimg src="photo1.jpg" class="smallPhoto"&gt <br/>
+            &ltimg src="photo2.jpg" class="smallPhoto"&gt <br/>
+            &ltimg src="photo3.jpg" class="smallPhoto"&gt <br/><br/>
+
+          <strong>CSS</strong><br/>
+          .smallPhoto { <br/>
+          &nbsp &nbspsize: 30px; <br/>
+          }
+        </p>
+
+        <p>
+          What's the difference?  Classes can be used on multiple elements, while IDs are used on single elements.  For example, since your page will only have one header, it would make more sense to give that header an ID instead of a class.  Classes can be used on multiple elements.  If you want to style multiple elements the same way, give them the same class.  An element can also contain an ID <em>and</em> a class.  Or multiple classes...but we you can learn about that and when they should be used from someone a bit more knowledgable on the subject than me!
+        </p>
+
+        <p id="idHash">
+          IDs also serve another important function.  Click this <a href="week2_technical.html#idHash">link</a>.  See, it took you directly to this paragraph instead of just refreshing the page!  That's because I gave this paragraph an ID, and added the ID hash onto the end of the URL like so: <a href="week2_technical.html#idHash">week2_technical.html#idHash</a>.  Your browser will attempt to find the section with that ID, which is why your IDs absolutely must be unique. 
+        </p>
+
+        <p>
+          There you have it: Use a class when you need it for multiple elements, use an ID when it applies to only a single element.  And if you don't either need them, don't use them.  Adding a lot of useless classes and IDs will do nothing but increase the likelihood of messing up your page. 
+        </p>
+        
+      </article>
+
+      
+
+     
+	  </main>
+  
+    <nav>
+      <div class="aboutMe">
+        <img id="headshot" src="images/AdamPhoto.jpg"> <br/>
+        Adam Hardy is a software developer in training currently studying at Dev Bootcamp, NYC
+      </div>
+
+      <div class="pastPosts">Past Posts</div>
+      NO PAST POSTS
+    </nav>
+
+    <footer>
+    	<div class="socialMedia">
+        <a href="https://github.com/ahardy55"><img class="icon" src="images/blacktocat.png"></a>
+        <a href="www.linkedin.com/pub/adam-hardy/1a/a05/169/"><img class="icon" src="images/linkedin.png"></a>
+        <a href="https://www.facebook.com/IWillPunchMattHollidayInTheStomach"><img class="icon" src="images/facebook.png"></a>
+        <a href="mailto:ahardy55@gmail.com"><img class="icon" src="images/gmail.png"></a>
+        <a href="https://twitter.com/AdamHardy55" target="_blank"><img class="icon" src="images/twitter.png"></a>
+    </footer>
+  </div>
+
+</body>
+</html>
