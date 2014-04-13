@@ -1,0 +1,49 @@
+body {
+  width: 1024px;
+  min-height: 800px;
+  max-width: 1024px;
+}
+    
+#main {
+  width: 1024px;
+  overflow: auto;
+}
+    
+header{
+  position: fixed;
+  height: 42px;
+  background-color: #464646;
+  color: #ffffff;
+  border-bottom: 1px;
+  width: 100%;
+  margin-top: 0px;
+  padding-bottom: 10px;
+  font-family: Georgia;
+  text-align: center;
+}
+    
+nav{
+  float: left;
+  margin-top: 50px;
+  width: 200px;
+  height: 200px;
+  background-color: #CCCCFF;
+  margin-top: 50px;
+  font-family: Arial;
+  font-size: 10pt;
+}
+    
+article{
+  float: right;
+  width: 800px;
+  background-color: #CCCCCC;
+  color: black;
+  padding: 10px;
+  font-family: Arial;
+  margin-top: 50px;
+}
+    
+footer{
+  clear: both;
+  text-align: center;
+    }
