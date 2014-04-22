@@ -21,7 +21,8 @@
 # 4. Assign the initial value to sum.  Then, add each subsequent value to the sum of sum!
 
 # 1. For sentence maker: create method called sentence maker that takes an array as it's paramenter
-# 2. 
+# 2. join the array with a space and store it in a variable
+# 3. Return that variable capitalized with a period at the end
 
 
 # 2. Initial Solution
