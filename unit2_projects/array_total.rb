@@ -27,7 +27,7 @@
 
 # 2. Initial Solution
 
-def pete(array)
+def total(array)
   sum = 0
   array.each do |value|
     sum += value
