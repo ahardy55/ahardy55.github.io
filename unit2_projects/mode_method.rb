@@ -25,7 +25,7 @@
 
 # 2. Initial Solution
 
-def toad(array)
+def mode(array)
   mode_hash = Hash.new(0)
   largest = 0
   most_elements = Array.new
