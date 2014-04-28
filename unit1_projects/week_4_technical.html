@@ -1,0 +1,129 @@
+<DOCTYPE html>
+<html>
+  <head>
+    <title>ADAM HARDY</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/blog_template.css">
+  </head>
+
+<body>
+  <div class="container">
+	  <header>
+		  <h1>ADAM HARDY</h1>
+		  <h3>Musings From a Developer in Training</h3>
+	  </header>
+
+	  <main>
+		  <time>Saturday, April 27th, 2014</time> <br/>
+		  <span class="title">Ruby Loops</span>
+      <article>
+        <p>
+          Have an array you want to print out all the values of?  What about modifying the values of each item in a hash?  Wants to write "99 Bottles of Beer On the Wall" but don't want to spend 3 days typing it all out?  These are just a few examples of where looping comes into play. Loops can execute a block of code a set number of times, and even be used to modify code.  It is essential part of programming, and if done correctly, a way to make your programming life infinitely easier.  
+        </p>
+
+        <p>
+          There are a variety of ways to loop in Ruby, including <em>While, Each, Until</em> and <em>Times</em>.  Sometimes, some or any of these loops can be utilized in your code.  Sometimes, only one of the loop types may suit your need.  Below, I will briefly go over each of the loop types and give a practical example of its usage. 
+        </p>
+
+        <p>
+          <h4><u>WHILE LOOPS</u></h4> 
+          The <em>While</em> loop will execute code while the condition is true.  For example, say you wanted to print out the numbers 1 to 100.  You could have a variable counter set to zero, then say "while counter is less than 100, printer the counter". In your code block, you would then increment the counter by 1 each time, like so: <br/><br/>
+          counter = 0 <br/>
+          &nbsp&nbsp while counter < 100 <br/>
+          &nbsp&nbsp counter += 1 <br/>
+          &nbsp&nbsp puts counter <br/>
+          end <br/><br/>
+
+          This code will print out each number from 1 to 100! <br/>
+          This is a good place to point out that one must be very careful to not create an infinate loop.  If we were to set out counter at 101 and run the loop to say "while counter is greater than 100", the loop would run forever!  Always make sure your loop has an ending!
+        </p>
+        <p>
+          <h4><u>EACH LOOPS</u></h4> <br/>
+          The <em>Each</em> loop will execute code for each element in an expression. Say you have an array of your friend's names and you want to write code that says their name plus "...is my friend" (what kind of code are you writing?!?!).  Easy enough: your code might look something like this: <br/><br/>
+
+          friends = ["Joey", "Johnny", "Dee Dee", "Tommy", "Marky"]<br/>
+          friends.each do |x| <br/>
+          &nbsp&nbsp puts "#{x} is my friend!" <br/>
+          end <br/> <br/>
+
+          The result: "Joey is my friend", "Johnny is my friend", etc!  <br/>
+          Or, let's say you add "Richie" to your array, but he is not your friend.  Nobody likes Richie. You can just add an if/else within your loop to specify this: <br/><br/>
+        
+          friends = ["Joey", "Johnny", "Dee Dee", "Tommy", "Marky", "Richie"] <br/>
+          friends.each do |x| <br/>
+          &nbsp&nbsp if x == "Richie" <br>
+          &nbsp&nbsp&nbsp&nbsp puts "I hate #{x}" <br/>
+          &nbsp&nbsp else <br/>
+          &nbsp&nbsp&nbsp&nbsp puts "#{x} is my friend" <br/>
+          &nbsp&nbsp end <br/>
+          end <br/><br/>
+
+          Now your output will say that you are friends with all the other Ramones, but that you hate Richie.
+        </p>
+
+        <p>
+          <h4><u>FOR LOOPS</u></h4> <br/>
+            The <em>For</em> loop executes the code once for each element in the expression. The above in the <em>Each</em> loop could be written as a <em>For</em> loop like so: <br/><br/>
+
+            for x in friends <br/>
+            &nbsp&nbsp puts "#{x} is my friend" <br/>
+            end <br/><br/>
+          </p>
+
+          <p>
+            <h4><u>TIMES LOOPS</u></h4> <br/>
+            The <em>Times</em> loop with execute a block of code...you guess it, the number of <em>times</em> you specify.  Say you want to go all <em>Shining</em>, but want to announce your crazy in a more efficient manner than Jack Torrance.  A <em>Times</em> loop is your friend. <br/><br/>
+
+            50.times do <br/>
+              &nbsp&nbsp puts "All work and no play make Jack a dull boy." <br/>
+            end
+
+          </p>
+
+          <p>
+            And there you have it: four different types of loops to serve your Ruby needs. I'll leave you with this: a program that will print all the words to "99 Bottles of Beer on the Wall", with a loop doing the counting for you. <br/><br/>
+
+            bottles_of_beer = 99 <br/><br/>
+            while bottles_of_beer > 2 <br/>
+            &nbsp&nbsp puts "#{bottles_of_beer} bottles of beer on the wall" <br/>
+            &nbsp&nbsp puts "#{bottles_of_beer} bottles of beer"  <br/>
+            &nbsp&nbspputs "take one down, pass it around" <br/>
+            &nbsp&nbsp bottles_of_beer -= 1 <br/>
+            &nbsp&nbsp puts "#{bottles_of_beer} bottles of beer on the wall!" <br/>
+            end <br/><br/>
+            puts "2 bottles of beer on the wall" <br/>
+            puts "2 bottles of beer" <br/>
+            puts "Take on down, pass it around, one...more...bottle...erv..o...beeeeeer" <br/>
+            puts "Ooooonnneee boddle of beeeer on theee wall" <br/>
+            puts "One bodel of burr" <br/>
+            puts "Take zzzzzzzzz"
+          </p>
+
+
+
+      </article>
+
+  
+	  </main>
+  
+    <nav>
+      <div class="aboutMe">
+        <img id="headshot" src="images/AdamPhoto.jpg"> <br/>
+        Adam Hardy is a software developer in training currently studying at Dev Bootcamp, NYC
+      </div>
+
+      <div class="pastPosts">Past Posts</div>
+      NO PAST POSTS
+    </nav>
+
+    <footer>
+    	<div class="socialMedia">
+        <a href="https://github.com/ahardy55"><img class="icon" src="images/blacktocat.png"></a>
+        <a href="www.linkedin.com/pub/adam-hardy/1a/a05/169/"><img class="icon" src="images/linkedin.png"></a>
+        <a href="https://www.facebook.com/IWillPunchMattHollidayInTheStomach"><img class="icon" src="images/facebook.png"></a>
+        <a href="mailto:ahardy55@gmail.com"><img class="icon" src="images/gmail.png"></a>
+        <a href="https://twitter.com/AdamHardy55" target="_blank"><img class="icon" src="images/twitter.png"></a>
+    </footer>
+  </div>
+
+</body>
+</html>
