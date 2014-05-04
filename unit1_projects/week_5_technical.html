@@ -1,0 +1,157 @@
+<DOCTYPE html>
+<html>
+  <head>
+    <title>ADAM HARDY</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/blog_template.css">
+  </head>
+
+<body>
+  <div class="container">
+	  <header>
+		  <h1>ADAM HARDY</h1>
+		  <h3>Musings From a Developer in Training</h3>
+	  </header>
+
+	  <main>
+		  <time>Saturday, May 3rd, 2014</time> <br/>
+		  <span class="title">Ruby Classes</span>
+      <article>
+        <p>
+          Ruby classes are a great way to organize your methods for DRY, easy use. For simple programming, they don't really serve a whole lot of purpose (other than good practice!)  But, in the real world, your code is going to be a bit more intense, and require classes for easier use and organization. 
+        </p>
+
+        <p>
+          So, when might you actually use a class in Ruby?  Let's say you have Users in your site.  Your users would need to be able to create an account, update their account and delete their account.  
+        </p>
+
+        <p>
+          Class User <br/><br/>
+
+        &nbsp&nbsp def create(name, user_name, password, email) <br/>
+        &nbsp&nbsp&nbsp&nbsp @name = name  <br/>
+        &nbsp&nbsp&nbsp&nbsp @user_name = user_name <br/>
+        &nbsp&nbsp&nbsp&nbsp @password = password <br/>
+        &nbsp&nbsp&nbsp&nbsp @email = email <br/>
+        &nbsp&nbsp end <br/><br/>
+
+        &nbsp&nbsp def update_password(password) <br/>
+        &nbsp&nbsp&nbsp&nbsp @password = password <br/>
+        &nbsp&nbsp end <br/> <br/>
+
+        &nbsp&nbsp def update_email(email) <br/>
+        &nbsp&nbsp&nbsp&nbsp @email = email <br/>
+        &nbsp&nbsp end <br/> <br/>
+          end <br/><br/>
+
+          frank_jones = User.new("Frank Jones", "Frank123", "password1", "frank@mail.com" ) <br/>
+          frank_jones.update_password("password55") <br/>
+          frank_jones.update_email("frank@aol.com") <br/>
+
+        </p>
+
+        <p>
+          See, now all we have to do to update the user frank_jones is call the method within the class and pass in the proper parameters.  This makes it far simpler and clearer on how to update the user.  It would be virtually impossible for you to organize your users without utilizing a Class. 
+        </p>
+
+        <p> Let's try another one...a roll of the dice.  We are going to roll 5 different dice.  First, we'll code it out <em>without</em> using a Die class.  Then will do it with one, and see which is easier.
+        </p>
+
+        <p>
+        def dice(number) <br/>
+        &nbsp&nbsp @number = number <br/>
+        end <br/><br/>
+
+        def roll <br/>
+        &nbsp&nbsp @number.sample <br/>
+        end <br/><br/>
+
+        dice([1,2,3,4,5,6]) <br/>
+        roll <br/><br/>
+
+        dice([1,2,3,4]) <br/>
+        roll <br/><br/>
+
+        dice([1,2,3,4,5,6,7,8,9,10,11,12]) <br/>
+        roll <br/><br/>
+
+        dice([1,2,3,4,5,6,7,8]) <br/>
+        roll <br/><br/>
+
+        dice([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]) <br/>
+        roll <br/><br/>
+
+        Now, let's roll the eight-sided die again, followed by the 20 sided die! <br/>
+        dice([1,2,3,4]) <br/>
+        roll <br/><br/>
+
+        dice([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]) <br/>
+        roll <br/><br/>
+
+
+        <p> Now, wrapping it in a class instead: <br/><br/>
+
+        Class Die <br/><br/>
+
+        &nbsp&nbsp def initialize(number) <br/>
+        &nbsp&nbsp&nbsp&nbsp @number = number <br/>
+        &nbsp&nbsp end <br/><br/>
+
+        &nbsp&nbsp def roll <br/>
+        &nbsp&nbsp&nbsp&nbsp @number.sample <br/>
+        &nbsp&nbsp end <br/><br/>
+        end <br/><br/>
+
+        Now, we'll run all our rolls with the same die in the same order. <br/><br/>
+        four_sided = Die.new([1,2,3,4]) <br/>
+        six_sided = Die.new([1,2,3,4,5,6]) <br/>
+        eight_sided = Die.new([1,2,3,4,5,6,7,8]) <br/>
+        twelve_sided = Die.new([1,2,3,4,5,6,7,8,9,10,11,12]) <br/>
+        twenty_sided = Die.new([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]) <br/><br/>
+
+        p six_sided.roll <br/>
+        p four_sided.roll <br/>
+        p twelve_sided.roll <br/>
+        p eight_sided.roll <br/>
+        p twenty_sided.roll <br/>
+        p four_sided.roll <br/>
+        p twenty_sided.roll <br/>
+        </p>
+
+        <p>
+          Because we're using a class, we can save each of our new instances of Die into a variable and reuse them without having to re-input our parameters.  It's far more organized and far easier to figure out our rolls!
+        </p>
+
+        <p>
+          These are a couple of very simple ways that classes can be used in Ruby.  If you can see the usefulness in this simple code, imagine what it does working on a large, real life codebase, with thousands of lines of code that execute tons of functions!  
+        </p>
+
+
+
+        
+      </article>
+
+      
+	  </main>
+  
+    <nav>
+      <div class="aboutMe">
+        <img id="headshot" src="images/AdamPhoto.jpg"> <br/>
+        Adam Hardy is a software developer in training currently studying at Dev Bootcamp, NYC
+      </div>
+
+      <div class="pastPosts">Past Posts</div>
+      NO PAST POSTS
+    </nav>
+
+    <footer>
+    	<div class="socialMedia">
+        <a href="https://github.com/ahardy55"><img class="icon" src="images/blacktocat.png"></a>
+        <a href="www.linkedin.com/pub/adam-hardy/1a/a05/169/"><img class="icon" src="images/linkedin.png"></a>
+        <a href="https://www.facebook.com/IWillPunchMattHollidayInTheStomach"><img class="icon" src="images/facebook.png"></a>
+        <a href="mailto:ahardy55@gmail.com"><img class="icon" src="images/gmail.png"></a>
+        <a href="https://twitter.com/AdamHardy55" target="_blank"><img class="icon" src="images/twitter.png"></a>
+    </footer>
+  </div>
+
+</body>
+</html>
