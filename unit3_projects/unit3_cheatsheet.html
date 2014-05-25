@@ -1,0 +1,172 @@
+<DOCTYPE html>
+<html>
+  <head>
+    <title>ADAM HARDY</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/unit3_cheatsheet.css">
+  </head>
+
+<body>
+  <div id="container">
+
+    <header>
+      <h1>Ruby Cheatsheet</h1>
+      <nav>
+        <a href="#dataTypes"> Data Types</a>
+        <a href="#looping">Loops</a>
+        <a href="#commonMethods">Common Methods</a>
+      </nav>
+    </header>
+
+    <div id="mainContent">
+
+      <article id="dataTypes">
+        <h2>Data Types<h2>
+
+        <table>
+          <tr>
+            <td>String</td>
+            <td>Holds a sequence of characters</td>
+            <td>string = "I am a string"</td>
+          </tr>
+
+          <tr>
+            <td>Boolean</td>
+            <td>A true/false value</td>
+            <td>boolean = true</td>
+          <tr/>
+        
+
+          <tr>
+            <td>Array</td>
+            <td>A range of values</td>
+            <td>array = [1,2,3,4,5]</td>
+          </tr>
+
+          <tr>
+            <td>Hash</td>
+            <td>A collection of key/value pairs</td>
+            <td>
+              hash = { <br/>
+              &nbsp&nbsp"Marky" => 35, <br/>
+              &nbsp&nbsp"Sarah" => 44, <br/>
+              &nbsp&nbsp"Jenny" => 22  <br/>
+            }
+            </td>
+        </tr>
+        </table>
+
+      </article>
+
+      <article id="looping">
+
+        <h2>Looping</h2>
+
+        <table>
+          <tr>
+            <td>.each</td>
+            <td>Looks at each element</td>
+            <td>
+              array.each do |element| <br/>
+              &nbsp&nbsp puts element <br/>
+              end
+            </td>
+          </tr>
+          
+          <tr>
+            <td>until</td>
+            <td>Loops until condition is met</td>
+            <td>
+              until i == 5 <br/>
+              &nbsp&nbsp puts "Still going" <br/>
+              &nbsp&nbsp i += 1 <br/>
+              end
+            </td>
+          </tr>
+
+          <tr>
+            <td>while</td>
+            <td>Loops while condition is true</td>
+            <td>
+              money = 500 <br/>
+              while money > 0 <br/>
+              &nbsp&nbsp puts "You still have money" <br/>
+              end
+            </td>
+          </tr>
+
+          <tr>
+            <td>times</td>
+            <td>Set number of times loop will run</td>
+            <td>
+              5.times do <br/>
+              &nbsp&nbsp puts "I'm running 5 times" <br/>
+              end
+            </td>   
+          </tr>
+
+          <tr>
+            <td>for</td>
+            <td>Executes for each element</td>
+            <td>
+              for element in array do <br/>
+              &nbsp&nbsp puts element <br/>
+              end
+
+            </td>
+          </tr>
+
+        </table>
+        
+
+      <article id="commonMethods">
+        <h2>Common Methods</h2>
+        <table>
+          <tr>
+            <td>.each</td>
+            <td>Calls the given block once for each element</td>
+            <td>Returns each item</td>
+          </tr>
+
+          <tr>
+            <td>.include?</td>
+            <td>Checks if given object is present</td>
+            <td>Return true or false</td>
+          </tr>
+
+          <tr>
+            <td>.length</td>
+            <td>Used to find number of elements</td>
+            <td>Returns the number of elements</td>
+          </tr>
+
+          <tr>
+            <td>.map</td>
+            <td>Call given block and creates new array from modified values</td>
+            <td>returns new array</td>
+          </tr>
+
+          <tr>
+            <td>.sort</td>
+            <td>sorts elements</td>
+            <td>returns sorted list</td>
+          </tr>
+        </table>
+
+      </article>
+
+
+
+    </div> <!-- end main_content -->
+  <footer>
+    <a href="https://github.com/ahardy55"><img class="icon" src="../unit1_projects/images/blacktocat.png"></a>
+        <a href="www.linkedin.com/pub/adam-hardy/1a/a05/169/"><img class="icon" src="../unit1_projects/images/linkedin.png"></a>
+        <a href="https://www.facebook.com/IWillPunchMattHollidayInTheStomach"><img class="icon" src="../unit1_projects/images/facebook.png"></a>
+        <a href="mailto:ahardy55@gmail.com"><img class="icon" src="../unit1_projects/images/gmail.png"></a>
+        <a href="https://twitter.com/AdamHardy55" target="_blank"><img class="icon" src="../unit1_projects/images/twitter.png"></a>
+  </footer>
+
+  </div> <!--end container -->
+
+
+</body>
+</html>
