@@ -40,12 +40,12 @@ nav {
   float: left;
   height: 310px;
   padding-top: 10px;
-  text-align: center;
-  width: 182px;
+  width: 255px;
   border-right: 1px solid black;
   border-bottom: 1px solid black;
   margin-left: 90px;
   padding-right: 18px;
+  overflow-y: scroll;
 }
 
 
@@ -60,18 +60,31 @@ h3 {
   float: left;
   text-align: justify;
   padding-left: 25px;
-  height: 320px;
-  width: 550px;
+  padding-top: 15px;
+  height: 305px;
+  width: 480px;
   border-bottom: 1px solid black;
  
 }
 
 footer {
   clear: both;
-  text-align: center;
-  letter-spacing: 1.5em;
+}
+
+.leftFooter {
+  float: left;
+  padding-left: 88px;
+  letter-spacing: .9em;
   padding-top: 10px;
 }
+
+.rightFooter{
+  float: left;
+  letter-spacing: .5em;
+  padding-left: 240px;
+  padding-top: 15px;
+}
+
 
 .socialMedia {
   height: 35px;
